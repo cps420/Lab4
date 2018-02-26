@@ -1,0 +1,17 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+table.wfull > tbody {
+    width: 100%;
+}
+
+.nav-link-container,
+.nav-link-container > a {
+    color: var(--gray-color-light);
+}
+
+.nav-link-container:hover {
+    background-color: var(--main-color-dark-2);
+}

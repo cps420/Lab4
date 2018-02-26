@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CarMasterPage.master.cs" Inherits="Lab4.CarMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Ford Crown Victoria</title>
+    <link href="Content/Utilities.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="flex">
+            <asp:Table ID="Content" CssClass="flex wfull" runat="server">
+                <asp:TableRow CssClass="flex wfull">
+                    <asp:TableCell CssClass="flex wfull">
+                        <div class="flex wfull p25px bg-m-dk">
+                            <h1 class="txt-gry-lt">Ford Crown Victoria</h1>
+                        </div>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow CssClass="flex">
+                    <asp:TableCell CssClass="flex wfull bg-gry-lt-2">
+                        <asp:Table runat="server" CssClass="flex">
+                            <asp:TableRow CssClass="flex">
+                                <asp:TableCell ID="Navigation_Cell" CssClass="flex">
+                                    <div class="flex column hfull wfull bg-m-dk">
+                                        <div class="nav-link-container p5px">
+                                            <a href="Intro.aspx">Introduction</a>
+                                        </div>
+                                        <div class="nav-link-container p5px">
+                                            <a href="Specs.aspx">Specs</a>
+                                        </div>
+                                        <div class="nav-link-container p5px">
+                                            <a href="History.aspx">History</a>
+                                        </div>
+                                        <div class="nav-link-container p5px">
+                                            <a href="Resources.aspx">Resources</a>
+                                        </div>
+                                    </div>
+                                </asp:TableCell>
+                                <asp:TableCell ID="Content_Cell" CssClass="pl25px pt5px pb5px">
+                                    <asp:ContentPlaceHolder ID="MasterContentPlaceHolder" runat="server">
+
+                                    </asp:ContentPlaceHolder>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow CssClass="flex">
+                    <asp:TableCell CssClass="flex wfull">
+                        <div class="flex wfull p25px bg-m-dk-2">
+                            <p class="txt-gry-lt">What am I supposed to put here?</p>
+                        </div>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </div>
+    </form>
+</body>
+</html>
